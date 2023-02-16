@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+input,
+button {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #333333;
+}
+
+button {
+  cursor: pointer;
+}
+
+.shopping-form {
+  margin-bottom: 32px;
+}
+.shopping-form .shopping-form-inputs {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 24px;
+}
+.shopping-form .shopping-form-item-wrapper {
+  flex: 1;
+  max-width: 256px;
+}
+.shopping-form .shopping-form-item-wrapper .shopping-form-label {
+  display: block;
+  margin-bottom: 4px;
+}
+.shopping-form .shopping-form-item-input,
+.shopping-form .shopping-form-quantity-input {
+  width: 100%;
+  height: 32px;
+  padding: 0 12px;
+  border: 1px solid #bdbdbd;
+  border-radius: 4px;
+  background: #ffffff;
+}
+.shopping-form .shopping-form-quantity-wrapper {
+  display: flex;
+  align-items: center;
+  margin-left: 24px;
+}
+.shopping-form .shopping-form-quantity-wrapper .shopping-form-quantity-input {
+  max-width: 64px;
+  text-align: center;
+  margin: 0 4px;
+}
+.shopping-form .shopping-form-quantity-wrapper .shopping-form-quantity-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: 0;
+  border-radius: 4px;
+  background: #e5e5e5;
+  transition: background-color 0.2s linear;
+}
+.shopping-form .shopping-form-quantity-wrapper .shopping-form-quantity-button:hover {
+  background: #ed8936;
+}
+.shopping-form .shopping-form-quantity-wrapper .shopping-form-quantity-button:active {
+  background: #f6ad55;
+}
+.shopping-form .shopping-form-quantity-wrapper .shopping-form-quantity-button .shopping-form-quantity-button::before,
+.shopping-form .shopping-form-quantity-wrapper .shopping-form-quantity-button .shopping-form-increment-button::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 4px;
+  border-radius: 4px;
+  background: #ffffff;
+}
+.shopping-form .shopping-form-quantity-wrapper .shopping-form-quantity-button .shopping-form-increment-button::after {
+  transform: rotate(90deg);
+}
+.shopping-form .shopping-form-submit-button {
+  width: 100%;
+  max-width: 128px;
+  height: 32px;
+  border: 0;
+  border-radius: 4px;
+  color: #ffffff;
+  font-weight: 700;
+  background: #ed8936;
+  transition: background-color 0.2s linear;
+}
+.shopping-form .shopping-form-submit-button:hover {
+  background: #f6ad55;
+}
+.shopping-form .shopping-form-submit-button:active {
+  background: #ed8936;
+}
+
+.shopping-result {
+  max-width: 416px;
+}
+.shopping-result .shopping-result-head,
+.shopping-result .shopping-item {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  padding: 8px 16px;
+}
+.shopping-result .shopping-result-head {
+  background: #e5e5e5;
+}
+.shopping-result .shopping-items {
+  list-style: none;
+}
+.shopping-result .shopping-item:nth-child(even) {
+  background: #e5e5e5;
+}
+
+.shopping-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.shopping-container .shopping-title {
+  margin: 32px 0;
+  font-size: 32px;
+}
+
+/*# sourceMappingURL=main.css.map */
