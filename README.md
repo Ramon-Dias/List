@@ -7,7 +7,7 @@ Pratica de uma lista de items
   - npm i
   - npm run dev
 
-##Tecnologias:
+## Tecnologias:
   
   - HTML
   - JavaScript
